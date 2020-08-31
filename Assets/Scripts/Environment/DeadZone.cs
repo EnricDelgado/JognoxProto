@@ -8,7 +8,7 @@ public class DeadZone : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerController>().health = 0;
+            collision.gameObject.GetComponent<PlayerController>().Die();
         }
     }
 }
